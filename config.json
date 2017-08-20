@@ -1,0 +1,7 @@
+[
+    {
+        "name":"pan",
+        "domain":"rocksdb.cn",
+        "port":80
+    }
+]

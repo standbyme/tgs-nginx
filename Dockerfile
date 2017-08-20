@@ -1,3 +1,3 @@
 FROM nginx
-COPY pan.conf /etc/nginx/conf.d/pan.conf
+COPY container.conf /etc/nginx/conf.d/container.conf
 EXPOSE 80
