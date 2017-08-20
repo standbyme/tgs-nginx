@@ -1,7 +1,6 @@
-{% for container in containers%}
 server {
 	listen 80;
-	server_name {{container.name}}.{{container.domain}};
+	server_name {{name}}.{{domain}};
 	location / {
       	proxy_redirect off;
       	proxy_set_header   X-Real-IP            $remote_addr;
@@ -9,7 +8,6 @@ server {
       	proxy_set_header   X-Forwarded-Proto $scheme;
       	proxy_set_header   Host                   $http_host;
       	proxy_set_header   X-NginX-Proxy    true;
-		proxy_pass  http://{{container.name|upper}}:{{container.port}};
+		proxy_pass  http://{{name|upper}}:{{port}};
 	}
 }
-{% endfor %}
