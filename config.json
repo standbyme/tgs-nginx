@@ -1,12 +1,12 @@
 [
     {
-        "name":"pan",
-        "domain":"rocksdb.cn",
-        "port":80
+        "name": "jenkins",
+        "domain": "rocksdb.cn",
+        "port": 8080
     },
     {
-        "name":"jenkins",
-        "domain":"rocksdb.cn",
-        "port":8080
+        "name": "pan",
+        "domain": "rocksdb.cn",
+        "port": 80
     }
 ]
